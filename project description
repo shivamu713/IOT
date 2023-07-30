@@ -1,0 +1,30 @@
+                                         PLANT MONITORING SYSTEM       
+
+
+The plant moisturizing system using Arduino Uno is a small-scale automated watering system designed to maintain optimal soil moisture levels for a plant. The system continuously monitors the moisture level of the soil using a soil moisture sensor and activates a water pump or solenoid valve to water the plant when the soil becomes too dry.
+
+Components:
+
+Arduino Uno board: The main microcontroller that controls the entire system.
+Soil moisture sensor: A sensor that measures the moisture content of the soil.
+Water pump or solenoid valve: Used to supply water to the plant.
+Transistor or relay: Controls the water pump or solenoid valve.
+Power supply: Supplies power to the water pump.
+
+Working :
+
+continuously reads the Analog value from the soil moisture sensor, which is connected to one of the Analog input pins of the Arduino. The moisture sensor measures the resistance between its two probes, which changes with soil moisture. Higher moisture leads to lower resistance, and vice versa.
+
+Sets a moisture threshold   which the soil is considered too dry, and the plant needs to be watered. You can adjust this threshold based on the specific needs of your plant.
+
+When the moisture level falls below the set threshold, the Python script sends a signal to the Arduino to activate the water pump/solenoid valve. The pump/solenoid remains on for a specified duration to water the plant.
+
+Benefits:
+
+Automation: The system automates the process of watering the plant, ensuring consistent moisture levels without manual intervention.
+
+Water Efficiency: By watering the plant only when the moisture level is low, the system promotes water efficiency and prevents overwatering.
+
+Plant Health: Maintaining optimal soil moisture levels helps promote healthy plant growth and reduces the risk of under or overwatering.
+
+Customizable: The system can be customized by adjusting the moisture threshold and watering duration to suit different plant types and environmental conditions.
